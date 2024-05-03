@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.verde {
+    display: flex;
+    flex-direction: row;
+    background-color: #EAE9D8;
+    padding: 20px;
+    color: #56554d;;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#teste {
+    /* padding-left: 50px; */
+    max-width: 200px;
+}
+
+#image {
+    max-width: 200px;
+}
