@@ -9,6 +9,12 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #060417;
+
+}
+
+p {
+    color: #FFFF;
 }
 
 .container {
@@ -19,7 +25,7 @@ body {
 .verde {
     display: flex;
     flex-direction: row;
-    background-color: #EAE9D8;
+    /* background-color: #EAE9D8; */
     padding: 20px;
     color: #56554d;;
     width: 100vw;
@@ -36,4 +42,29 @@ body {
 
 #image {
     max-width: 200px;
+}
+
+.container-conteudo {
+    margin-left: 20px;
+    display: flex;
+    /* align-items: center; */
+    padding: 20px;
+    justify-content: center;
+    width: 279px;
+    height: 400px;
+    background-color: #130F2A;
+    border-radius: 10px;
+    border: #6751B9  solid 1px;    
+}
+
+
+.style-containerdth-card-image img {
+    width: 270px;
+    height: 128px; 
+    display: block; 
+    border-radius: 10px;
+}
+
+.container-main-conteudo {
+    display: flex;
 }
