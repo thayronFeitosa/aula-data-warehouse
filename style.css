@@ -1,15 +1,20 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
 }
 
 body {
     display: flex;
     flex-direction: column;
     background-color: #060417;
+    width: 100vw;
+    height: 100vh;
 
 }
 
@@ -27,11 +32,22 @@ p {
     flex-direction: row;
     /* background-color: #EAE9D8; */
     padding: 20px;
-    color: #56554d;;
+    color: #56554d;
+    ;
     width: 100vw;
     align-items: center;
     justify-content: center;
 
+
+}
+
+.icon-img {
+    width: 20px; /* Definindo a largura do ícone */
+    height: 20px;
+    height: auto; /* Altura automática para manter a proporção */
+    /* background-color: red;
+    c */
+    color: #FFFF;
 
 }
 
@@ -47,24 +63,32 @@ p {
 .container-conteudo {
     margin-left: 20px;
     display: flex;
-    /* align-items: center; */
     padding: 20px;
     justify-content: center;
-    width: 279px;
-    height: 400px;
+    width: 270px;
+    height: 350px;
     background-color: #130F2A;
     border-radius: 10px;
-    border: #6751B9  solid 1px;    
+    border: #6751B9 solid 1px;
 }
 
 
 .style-containerdth-card-image img {
     width: 270px;
-    height: 128px; 
-    display: block; 
+    height: 128px;
+    display: block;
     border-radius: 10px;
 }
 
 .container-main-conteudo {
     display: flex;
+}
+
+.title-card {
+    color: var(--portifolio-app-alpha-vercel-app-nero, #FFF);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
