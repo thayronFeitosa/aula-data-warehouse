@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--cor-primaria);
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 
@@ -173,11 +173,13 @@ h1 {
 }
 
 .style-logo {
-    width: 423px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 .style-logo img {
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 5px solid var(--cor-secundaria);
     padding: 0.5rem;
@@ -235,7 +237,44 @@ h1 {
 
 @media (max-width: 1025px) {}
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .style-logo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .style-logo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .description-site {
+        width: 680px;
+        /* display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    .description-site p {
+        content: "";
+        width: 350px;
+        font-size: 14px;
+    }
+
+    .description-site h1 {
+        overflow: hidden;
+        border-right: 0.1em solid var(--cor-secundaria);
+        white-space: nowrap;
+        animation: typing 2s steps(50, end);
+        font-size: 40px;
+    }
+
+    #content-title {
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 600px) {
     .container-conteudo {
@@ -275,5 +314,38 @@ h1 {
 
     html {
         overflow-y: scroll;
+    }
+
+    .style-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .style-logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description-site {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description-site p {
+        content: "";
+        width: 350px;
+        font-size: 11px;
+    }
+
+    .description-site h1 {
+        overflow: hidden;
+        border-right: 0.1em solid var(--cor-secundaria);
+        white-space: nowrap;
+        animation: typing 2s steps(50, end);
+        font-size: 40px;
     }
 }
