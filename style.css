@@ -178,10 +178,13 @@ h1 {
     padding: 20px;
     justify-content: center;
     width: 310px;
+    max-width: 310px;
     height: 360px;
     background-color: var(--cor-secundaria-2);
     border-radius: 10px;
     border: var(--cor-secundaria) solid 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .style-logo {
