@@ -1,18 +1,60 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
+:root {
+    --cor-primaria: #060417;
+    --cor-secundaria: #6751B9;
+    --cor-destaque: #e74c3c;
+    --color-text: #FFFF
 }
 
+html,
 body {
+    margin: 0;
+    border: 0;
+
     display: flex;
     flex-direction: column;
-    background-color: #060417;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    height: 100vh;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--cor-secundaria);
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-secundaria);
+}
+
+html {
+    scrollbar-width: thin;
+    /* para Firefox */
+    scrollbar-color: var(--cor-secundaria) grey;
+    /* para Firefox */
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+    background: var(--cor-secundaria);
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-secundaria);
 }
 
 p,
@@ -22,7 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #FFFF;
+    color: var(--color-text);
 }
 
 h1 {
@@ -40,15 +82,9 @@ h1 {
     justify-content: center;
     width: 310px;
     height: 360px;
-    background-color: #130F2A;
+    background-color: var(--cor-primaria);
     border-radius: 10px;
-    border: #6751B9 solid 1px;
-
-    @media (max-width: 600px) {
-        padding: 5px;
-        width: 202px;
-        height: 220px;
-    }
+    border: var(--cor-secundaria) solid 1px;
 }
 
 .style-containerdth-card-image {
@@ -56,17 +92,12 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
 .style-containerdth-card-image img {
     width: 270px;
     height: 128px;
     display: block;
     border-radius: 10px;
-
-    @media (max-width: 600px) {
-        width: 184px;
-        height: 84px;
-        border-radius: 7px;
-    }
 }
 
 .container-main-conteudo {
@@ -74,55 +105,23 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
     gap: 20px;
-
-    @media (max-width: 600px) {
-        gap: 10px;
-    }
 }
 
 .title-card {
-    color: var(--portifolio-app-alpha-vercel-app-nero, #FFF);
+    color: var(--portifolio-app-alpha-vercel-app-nero, var(--color-text));
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-    @media (max-width: 600px) {
-        font-size: 16px;
-        margin: 0;
-        padding: 2px;
-        
-    }
-}
-
-.link-icon img {
-
-    @media (max-width: 600px) {
-        width: 15px;
-    }
-
-}
-
-.description-card {
-
-    @media (max-width: 600px) {
-        font-size: 10px;        
-    }
 }
 
 .titles h1 {
     overflow: hidden;
-    border-right: 0.15em solid #a993fe;
+    border-right: 0.1em solid var(--cor-secundaria);
     white-space: nowrap;
-    animation: typing 2s steps(40, end);
-
-    @media (max-width: 600px) {
-        font-size: 16px;
-        
-    }
+    animation: typing 2s steps(50, end);
 }
 
 
@@ -143,13 +142,47 @@ h1 {
 @media (max-width: 768px) {}
 
 @media (max-width: 600px) {
-    .hero-container h2 {
-        font-size: 0.8rem;
+    .container-conteudo {
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        width: 202px;
+        height: 220px;
+        background-color: var(--cor-primaria);
+        border-radius: 10px;
+        border: var(--cor-secundaria) solid 1px;
     }
 
-    /* .container-main-conteudo {
-        display: flex;
-        flex-direction: column;
-         flex-wrap: wrap;
-    } */
+    .style-containerdth-card-image img {
+        width: 184px;
+        height: 84px;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .title-card {
+        font-size: 16px;
+        margin: 0;
+        padding: 2px;
+    }
+
+    .link-icon img {
+        width: 15px;
+    }
+
+    .description-card {
+        font-size: 10px;
+    }
+
+    .titles h1 {
+        font-size: 16px;
+    }
+
+    .container-main-conteudo {
+        gap: 10px;
+    }
+
+    html {
+        overflow-y: scroll;
+    }
 }
