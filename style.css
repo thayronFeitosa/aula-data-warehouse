@@ -13,75 +13,73 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #060417;
-    width: 100vw;
-    height: 100vh;
-
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #FFFF;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-}
-
-.verde {
-    display: flex;
-    flex-direction: row;
-    /* background-color: #EAE9D8; */
-    padding: 20px;
-    color: #56554d;
-    ;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.icon-img {
-    width: 20px; /* Definindo a largura do ícone */
-    height: 20px;
-    height: auto; /* Altura automática para manter a proporção */
-    /* background-color: red;
-    c */
-    color: #FFFF;
-
-}
-
-#teste {
-    /* padding-left: 50px; */
-    max-width: 200px;
-}
-
-#image {
-    max-width: 200px;
+h1 {
+    font-family: Poppins;
+    font-family: Poppins;
+    font-size: 60.8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
 }
 
 .container-conteudo {
-    margin-left: 20px;
     display: flex;
     padding: 20px;
     justify-content: center;
-    width: 270px;
-    height: 350px;
+    width: 310px;
+    height: 360px;
     background-color: #130F2A;
     border-radius: 10px;
     border: #6751B9 solid 1px;
+
+    @media (max-width: 600px) {
+        padding: 5px;
+        width: 202px;
+        height: 220px;
+    }
 }
 
-
+.style-containerdth-card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .style-containerdth-card-image img {
     width: 270px;
     height: 128px;
     display: block;
     border-radius: 10px;
+
+    @media (max-width: 600px) {
+        width: 184px;
+        height: 84px;
+        border-radius: 7px;
+    }
 }
 
 .container-main-conteudo {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    @media (max-width: 600px) {
+        gap: 10px;
+    }
 }
 
 .title-card {
@@ -91,4 +89,67 @@ p {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        margin: 0;
+        padding: 2px;
+        
+    }
+}
+
+.link-icon img {
+
+    @media (max-width: 600px) {
+        width: 15px;
+    }
+
+}
+
+.description-card {
+
+    @media (max-width: 600px) {
+        font-size: 10px;        
+    }
+}
+
+.titles h1 {
+    overflow: hidden;
+    border-right: 0.15em solid #a993fe;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end);
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        
+    }
+}
+
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1025px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 600px) {
+    .hero-container h2 {
+        font-size: 0.8rem;
+    }
+
+    /* .container-main-conteudo {
+        display: flex;
+        flex-direction: column;
+         flex-wrap: wrap;
+    } */
 }
