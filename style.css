@@ -74,6 +74,18 @@ h1 {
     line-height: 80px;
 }
 
+.link-icon img {
+    border: var(--cor-secundaria) solid 1px;
+    padding: 3px;
+    border-radius: 9px;
+    margin-bottom: 5px;
+
+}
+.link-icon:hover  img{
+    background-color: var(--cor-secundaria);
+    transition: 0.2s;
+}
+
 .navbar {
     width: 1300px;
     height: 120px;
@@ -222,8 +234,6 @@ h1 {
     gap: 20px;
 }
 
-
-/* The typing effect */
 @keyframes typing {
     from {
         width: 0;
@@ -250,11 +260,6 @@ h1 {
 
     .description-site {
         width: 680px;
-        /* display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
-        justify-content: center; */
     }
 
     .description-site p {
@@ -295,9 +300,10 @@ h1 {
         border-radius: 10px;
     }
 
-
     .link-icon img {
         width: 15px;
+        border-right: 0.1em solid var(--cor-secundaria);
+
     }
 
     .description-card {
@@ -348,4 +354,12 @@ h1 {
         animation: typing 2s steps(50, end);
         font-size: 40px;
     }
+
+    .title-container::after,
+    .title-container::before {
+        content: "";
+        width: 15.125rem;
+        filter: blur(1200px);
+    }
+
 }
