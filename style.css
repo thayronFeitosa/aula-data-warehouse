@@ -79,11 +79,13 @@ h1 {
     padding: 3px;
     border-radius: 9px;
     margin-bottom: 5px;
+    transition: 0.5s;
 
 }
+
 .link-icon:hover  img{
     background-color: var(--cor-secundaria);
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .navbar {
@@ -91,6 +93,12 @@ h1 {
     height: 120px;
     position: fixed;
     top: 0;
+}
+
+.main-image-h:hover img {
+    border: 1px solid var(--cor-secundaria);
+    box-shadow: 0 0 10px 0 var(--cor-secundaria);
+    animation: float 2s ease-in-out infinite;
 }
 
 .navbar h2 {
@@ -236,6 +244,10 @@ h1 {
     flex-wrap: wrap;
     gap: 20px;
 }
+.description-card {
+    font-size: 15px;
+}
+
 
 @keyframes typing {
     from {
@@ -304,7 +316,6 @@ h1 {
     }
 
     .link-icon img {
-        width: 15px;
         border-right: 0.1em solid var(--cor-secundaria);
 
     }
