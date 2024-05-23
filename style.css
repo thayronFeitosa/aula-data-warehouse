@@ -56,6 +56,8 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 p,
+span,
+hr,
 h1,
 h2,
 h3,
@@ -115,25 +117,6 @@ h1 {
     font-weight: bold;
 }
 
-/* .navbar-menu a {
-    position: relative;
-} */
-/* 
-.navbar-menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 3px;
-    background-color: var(--cor-secundaria);
-    transition: width 0.2s;
-} */
-
-/* .navbar-menu a:hover::after,
-.navbar-menu a:focus::after {
-    width: 100%;
-} */
 
 #content-title {
     width: 100%;
@@ -177,13 +160,14 @@ h1 {
 .title-container::after,
 .title-container::before {
     content: "";
-    width: 25.125rem;
-    height: 25.125rem;
+    width: 40.125rem;
+    height: 40.125rem;
     border-radius: 28.125rem;
     background-color: var(--cor-secundaria);
-    position: absolute;
+    position: fixed;
     /* z-index: 1; */
     filter: blur(225px);
+    opacity: 22%;
 }
 
 .title-container::after {
