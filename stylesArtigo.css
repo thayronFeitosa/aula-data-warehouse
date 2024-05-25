@@ -18,14 +18,6 @@ body {
     /* height: 100vh; */
 }
 
-h1 {
-    font-family: Poppins;
-    font-family: Poppins;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 80px;
-}
 
 .description-site h1 {
     /* overflow: hidden; */
@@ -73,6 +65,7 @@ h2 {
 .description-site p {
     max-width: 700px;
 }
+
 #tipos-poo {
     display: flex;
     flex-direction: column;
@@ -110,6 +103,118 @@ h2 {
 }
 
 hr {
-    width: 100%;
+    /* width: 100%; */
     border: 1px solid var(--color-text);
+}
+
+.fist-div {
+    min-width: 400px;
+}
+
+.paragraph {}
+
+.paragraph-div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph-image {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.paragraph-image img {
+    padding: 5px;
+    align-items: center;
+    width: 400px;
+}
+
+
+
+/* Dispositivos muito pequenos (telefones em modo retrato) */
+@media (max-width: 320px) {
+    .description-site h1 {
+        font-size: 20px;
+    }
+
+    .about {
+        width: 300px;
+    }
+
+    .content h3 {
+        font-size: 15px;
+    }
+}
+
+/* Dispositivos pequenos (telefones em modo retrato) */
+@media (min-width: 321px) and (max-width: 480px) {
+    .description-site h1 {
+        font-size: 20px;
+    }
+
+    .about {
+        width: 400px;
+    }
+
+    .content h3 {
+        font-size: 15px;
+    }
+
+}
+
+/* Dispositivos médios (telefones em modo paisagem) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .about {
+        width: 400px;
+    }
+
+    .description-site h1 {
+        font-size: 25px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+}
+
+/* Dispositivos grandes (tablets em modo retrato) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .content h3 {
+        font-size: 30px;
+    }
+}
+
+/* Dispositivos muito grandes (tablets em modo paisagem e pequenos desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* Desktops padrão */
+@media (min-width: 1201px) and (max-width: 1601px) {
+    h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* Desktops grandes */
+@media (min-width: 1601px) {
+    h1 {
+        font-size: 40px;
+    }
+
 }

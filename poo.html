@@ -46,23 +46,28 @@
 
 
         <div class="title-container content">
-            <h2>Oque e POO (Programação orientada a Objetos)</h2>
-            <p>Programação Orientada a Objetos (POO) é um paradigma de programação que visa organizar, estruturar e
-                desenvolver códigos de maneira mais intuitiva e próxima do mundo real. Esse método permite criar
-                representações concretas de objetos do nosso dia a dia, facilitando a compreensão e manipulação do
-                “codigo” que e desenvolvemos
-            </p>
-            <p>
-                A “Orientação a Objetos” é uma técnica de programação que modela elementos do mundo real para código.
-                Por exemplo, itens do nosso cotidiano, como cadeiras ou carros, são representados no código com suas
-                próprias caracteristivas e comportamentos, com isso tornamos o desenvolvimento de softwares mais
-                intuitivo e compreensível, porque criamos representações do mundo real
-            </p>
-            <p>
-                Para facilitar a compreensão, vou descrever a representação de um carro, explicando o que são classe,
-                construtor e instância. Em seguida, abordaremos cada um dos quatro pilares da POO: Abstração,
-                Encapsulamento, Herança e Polimorfismo
-            </p>
+            <div class="fist-div">
+                <h3>Oque e POO</h3>
+                <p>Programação Orientada a Objetos (POO) é um paradigma de programação que visa organizar, estruturar e
+                    desenvolver códigos de maneira mais intuitiva e próxima do mundo real. Esse método permite criar
+                    representações concretas de objetos do nosso dia a dia, facilitando a compreensão e manipulação do
+                    “codigo” que e desenvolvemos
+                </p>
+                <p>
+                    A “Orientação a Objetos” é uma técnica de programação que modela elementos do mundo real para
+                    código.
+                    Por exemplo, itens do nosso cotidiano, como cadeiras ou carros, são representados no código com suas
+                    próprias caracteristivas e comportamentos, com isso tornamos o desenvolvimento de softwares mais
+                    intuitivo e compreensível, porque criamos representações do mundo real
+                </p>
+                <p>
+                    Para facilitar a compreensão, vou descrever a representação de um carro, explicando o que são
+                    classe,
+                    construtor e instância. Em seguida, abordaremos cada um dos quatro pilares da POO: Abstração,
+                    Encapsulamento, Herança e Polimorfismo
+                </p>
+            </div>
+
 
             <div>
                 <h3>
@@ -84,9 +89,8 @@
                     <br>
                     <strong>Comportamentos (Métodos):</strong> ligar, desligar, acelerar, frear, abastecer
                 </p>
-                <div>
-                    <img style="width: 600px;" src="./img/img1.png" alt="">
-
+                <div class="paragraph-image">
+                    <img src="./img/img1.png" alt="">
                 </div>
             </div>
             <div>
@@ -103,9 +107,9 @@
                     necessariamente receber todos os atributos; alguns podem ser inicializados internamente na classe,
                     como neste exemplo
                 </p>
-
-                <img style="width: 600px;" src="./img/img2.png" alt="">
-
+                <div class="paragraph-image">
+                    <img src="./img/img2.png" alt="">
+                </div>
                 <p>
                     No exemplo, podemos ver o uso da palavra reservada "this" seguida do nome do atributo. "This" é uma
                     palavra reservada em POO usada para referenciar um atributo da própria classe. Quando utilizamos
@@ -124,7 +128,9 @@
                 características e comportamentos
             </p>
             <p>Na imagem abaixo podemos visualizar de forma clare esse comportamento.</p>
-            <img style="width: 600px;" src="./img/img3.png" alt="">
+            <div class="paragraph-image">
+                <img src="./img/img3.png" alt="">
+            </div>
             <p>Para criar uma instância de uma classe, usamos a palavra reservada "new". Essa palavra-chave chama
                 automaticamente o método construtor da classe, onde passamos os atributos necessários
                 <br><strong>Ao fazer
@@ -133,7 +139,9 @@
             <p>Por exemplo, no código abaixo, criamos três objetos diferentes, cada um representando um carro
                 distinto, mas todos usando a mesma classe base Carro
             </p>
-            <img style="width: 600px;" src="./img/img4.png" alt="">
+            <div class="paragraph-image">
+                <img s src="./img/img4.png" alt="">
+            </div>
             <p>Dessa forma todas as intancias de carro, possuem o mesmo comportamento e caracteristicas da classe
                 Carro, onde todas possuem os mesmos atributos e métodos.
             </p>
@@ -145,8 +153,10 @@
                 cada objeto de forma única. Cada instância tem seu próprio comportamento
             </p>
 
-            <img style="width: 600px;" src="./img/img5.png" alt="">
-            <img style="width: 600px;" src="./img/img6.png" alt="">
+            <div class="paragraph-image">
+                <img s src="./img/img5.png" alt="">
+                <img s src="./img/img6.png" alt="">
+            </div>
 
             <p>
                 Neste exemplo, o método descricao retorna uma string que descreve os atributos do carro. Quando chamamos
@@ -254,8 +264,10 @@
                     atributos
                     da classe pai que estão definidos como public ou protected.
                 </p>
-                <img style="width: 600px;" src="./img/img8.png" alt="">
-                <img style="width: 600px; margin-top: 5px;" src="./img/img9.png" alt="">
+                <div class="paragraph-image">
+                    <img src="./img/img8.png" alt="">
+                    <img src="./img/img9.png" alt="">
+                </div>
             </div>
             <div>
                 <h3>Polimorfismo</h3>
@@ -280,7 +292,9 @@
                     polimorfismo permite tratar objetos de diferentes classes de maneira uniforme, ao mesmo tempo
                     executando comportamentos específicos de cada tipo de objeto.
                 </p>
-                <img style="width: 600px;" src="./img/img10.png" alt="">
+                <div class="paragraph-image">
+                    <img s src="./img/img10.png" alt="">
+                </div>
                 <p>
                     No exemplo a baixo, podemos ver que a classe <strong>Cachorro</strong> e <strong>Gato</strong> são
                     subclasses de <strong>Animal</strong>. Cada uma
@@ -289,7 +303,9 @@
                     de objetos <strong>Animal</strong>, cada objeto responde com seu próprio som, demonstrando o
                     polimorfismo.
                 </p>
-                <img style="width: 600px;" src="./img/img11.png" alt="">
+                <div class="paragraph-image">
+                    <img s src="./img/img11.png" alt="">
+                </div>
                 <p>
                     Observe que com o polimorfismo cada classe pode ter seu próprio comportamento sobrescrevendo os
                     métodos da classe pai. No exemplo das classes Cachorro e Gato, a classe Cachorro sobrescreve o
@@ -302,9 +318,12 @@
                 <h2>Referencias</h2>
                 <p>https://www.canva.com/design/DAFE7PxSb3k/3Mq2fKO4ybnSKiJM4TWYmg/edit</p>
                 <p>https://blog.rocketseat.com.br/entendendo-a-abstracao-em-poo-com-java/</p>
-                <p>https://www.freecodecamp.org/portuguese/news/os-quatro-pilares-da-programacao-orientada-a-objetos-com-javascript/</p>
-                <p>https://caiocnoronha.medium.com/programa%C3%A7%C3%A3o-orienta%C3%A7%C3%A3o-a-objetos-poo-759d96dda910</p>
-                <p>https://pt.stackoverflow.com/questions/240186/n%C3%A3o-consegui-entender-muito-bem-o-encapsulamento-na-poo</p>
+                <p>https://www.freecodecamp.org/portuguese/news/os-quatro-pilares-da-programacao-orientada-a-objetos-com-javascript/
+                </p>
+                <p>https://caiocnoronha.medium.com/programa%C3%A7%C3%A3o-orienta%C3%A7%C3%A3o-a-objetos-poo-759d96dda910
+                </p>
+                <p>https://pt.stackoverflow.com/questions/240186/n%C3%A3o-consegui-entender-muito-bem-o-encapsulamento-na-poo
+                </p>
             </div>
 
         </div>

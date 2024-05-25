@@ -279,7 +279,7 @@ h1 {
         width: 680px;
     }
 
-    .description-site p {
+    .description-site p, li {
         content: "";
         width: 350px;
         font-size: 14px;
@@ -357,7 +357,7 @@ h1 {
         justify-content: center;
     }
 
-    .description-site p {
+    .description-site p, li {
         content: "";
         width: 350px;
         font-size: 11px;
