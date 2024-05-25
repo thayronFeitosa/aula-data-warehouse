@@ -56,6 +56,8 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 p,
+li,
+la,
 span,
 hr,
 h1,
@@ -85,7 +87,7 @@ h1 {
 
 }
 
-.link-icon:hover  img{
+.link-icon:hover img {
     background-color: var(--cor-secundaria);
     transition: 0.5s;
 }
@@ -243,6 +245,7 @@ h1 {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .description-card {
     font-size: 15px;
 }

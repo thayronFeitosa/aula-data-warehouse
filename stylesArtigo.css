@@ -35,17 +35,17 @@ h1 {
 }
 
 .style-img-artigo {
-    width: 700px;
-    height: 200px;
+    /* width: 1200px; */
+    height: 400px;
 
 }
 
 
 .style-img-artigo img {
-    width: 700px;
-    height: 200px;
-    display: block;
-    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 500px;
+    /* display: block; */
+    /* border-radius: 15px 15px 0px 0px; */
 }
 
 .content {
